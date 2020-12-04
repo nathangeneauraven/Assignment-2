@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nathan">
+    <meta name="email" content="gene0037@algonquinlive.com">
+    <meta name="author" content="Tirath">
+    <meta name="email" content="mula0019@algonquinlive.com">
+    <meta name="author" content="Mohamed">
+    <meta name="email" content="temk0001@algonquinlive.com">
+    <meta name="author" content="Hussein">
+    <meta name="email" content="dawo0017@algonquinlive.com">
+    <title>Intro Page</title>
+    <link rel="stylesheet" type="text/css" href="scripts/main.css">
+</head>
+
+<header id="landingPageHeader">
+    <a href="index.html" alt=""><img src="images/portfolio.png" alt="logo" id="portfolioIcon"></a>
+    <!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzjcxYpoOxSe_UBhv-drp46jLNCyNsXBcMzw&usqp=CAU -->
+    <nav>
+        <a href="aboutus.html">About Us</a>
+        <a href="tirath.html">Tirath</a>
+        <a href="moh.html">Moh</a>
+        <a href="hussein.html">Hussein</a>
+        <a href="nathan.html">Nathan</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+<body>
+    <article class="fullPage">
+        <div class="introWrapper"> 
+            <div class="item item_One">
+                <h3>Tirath</h3>
+                <img src="images/resume.png" alt="animated book">
+                <div class="info">
+                    <p><b>Team Leader</b></p>
+                    <p>Integrator and single point contact of the team. Helper in UX.</p>
+                </div>
+                <div class="resume">
+                    <a href="#"><h3>Resume</h3></a>
+                </div>
+                <div class="subLink">
+                    <a href="tirath.html">Find Out More</a>
+                </div>
+            </div>
+            <div class="item item_Two">
+                <h3>Mohamed</h3>
+                <img src="images/resume.png" alt="animated book">
+                <!-- https://i.pinimg.com/originals/ad/99/ff/ad99ffd43ced92a37cd43b15abfff1b7.jpg-->
+                <div class="info">
+                    <p><b>Front-End Designer</b></p>
+                    <p>Brain behind the interaction with focus on the look and feel.</p>
+                </div>
+                <div class="resume">
+                    <a href="#"><h3>Resume</h3></a>
+                </div>
+                <div class="subLink">
+                    <a href="moh.html">Find Out More</a>
+                </div>
+            </div>
+            <div class="item item_Three">
+                <h3>Hussein</h3>
+                <img src="images/resume.png" alt="animated book">
+                <div class="info">
+                    <p><b>UX Developer</b></p>
+                    <p>Brings life to the website using Javascript.</p>
+                </div>
+                <div class="resume">
+                    <a href="#"><h3>Resume</h3></a>
+                </div>
+                <div class="subLink">
+                    <a href="hussein.html">Find Out More</a>
+                </div>
+            </div>
+            <div class="item item_Four">
+                <h3>Nathan</a></h3>
+                <img src="images/resume.png" alt="animated book">
+                <div class="info">
+                    <p><b>Front-End Developer</b></p>
+                    <p>Working on the HTML and helping with CSS.</p>
+                </div>
+                <div class="resume">
+                    <a href="#"><h3>Resume</h3></a>
+                </div>
+                <div class="subLink">
+                    <a href="nathan.html">Find Out More</a>
+                </div>
+            </div>
+        </div>
+    </article>
+    <br><br>
+    <div id="footerContainer">
+        <footer>
+            <div class="footerHeading footer0">
+                <h2>Mode</h2>
+                <button class="btn-toggle">Toggle</button>
+            </div>
+            <div class="footerHeading footer1">
+                <h2>About Us</h2>
+                <a href="aboutus.html">Meet The Team</a>
+            </div>
+            <div class="footerHeading footer2">
+                <h2>Contact Us</h2>
+                <a href="mailto:devteam8117@gmail.com?subject=inquiry%20from%20website">Send an Email</a>
+            </div>
+            <div class="footerHeading footer3">
+                <h2>Social Media</h2>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Youtube</a>
+                <a href="#">Twitter</a>
+            </div>
+            <form id="footerEmailForm" onsubmit="return confirm('Do you really want to submit this email?');" >
+                <h2>Join Our Team Blog</h2>
+                <input type="email" placeholder="Enter your email address" id="footerEmail">
+                <input type="submit" value="Sign Up" id="footerEmailButton">
+            </form>
+            <script src="scripts/toggleMode.js"></script>
+        </footer>
+    </div>
+</body>
+</html>

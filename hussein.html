@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nathan">
+    <meta name="email" content="gene0037@algonquinlive.com">
+    <meta name="author" content="Tirath">
+    <meta name="email" content="mula0019@algonquinlive.com">
+    <meta name="author" content="Mohamed">
+    <meta name="email" content="temk0001@algonquinlive.com">
+    <meta name="author" content="Hussein">
+    <meta name="email" content="dawo0017@algonquinlive.com">
+    <title>Hussein Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="scripts/main.css">
+</head>
+
+<header id="landingPageHeader">
+    <a href="index.html" alt=""><img src="images/portfolio.png" alt="logo" id="portfolioIcon"></a>
+    <!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzjcxYpoOxSe_UBhv-drp46jLNCyNsXBcMzw&usqp=CAU -->
+    <nav>
+        <a href="aboutus.html">About Us</a>
+        <a href="tirath.html">Tirath</a>
+        <a href="moh.html">Moh</a>
+        <a href="hussein.html">Hussein</a> 
+        <a href="nathan.html">Nathan</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+<body>
+    <article class="fullPage">
+        <div class="slider">
+            <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+            <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+            <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+            <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+            <div class="slider__inner">
+              <div class="slider__contents"><img src="images/portfolio.png" alt="logo" class="slider__image">
+                <h2 class="slider__caption">Who is Hussein?</h2>
+                <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+              </div>
+              <div class="slider__contents"><img src="images/portfolio.png" alt="logo" class="slider__image">
+                <h2 class="slider__caption">Interests</h2>
+                <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+              </div>
+              <div class="slider__contents"><img src="images/portfolio.png" alt="logo" class="slider__image">
+                <h2 class="slider__caption">Resume</h2>
+                <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+              </div>
+              <div class="slider__contents"><img src="images/portfolio.png" alt="logo" class="slider__image">
+                <h2 class="slider__caption">Portfolio</h2>
+                <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+              </div>
+        </div>
+    </article>
+    <div id="footerContainer">
+        <footer>
+            <div class="footerHeading footer0">
+                <h2>Mode</h2>
+                <button class="btn-toggle">Toggle</button>
+            </div>
+            <div class="footerHeading footer1">
+                <h2>About Us</h2>
+                <a href="aboutus.html">Meet The Team</a>
+            </div>
+            <div class="footerHeading footer2">
+                <h2>Contact Us</h2>
+                <a href="mailto:devteam8117@gmail.com?subject=inquiry%20from%20website">Send an Email</a>
+            </div>
+            <div class="footerHeading footer3">
+                <h2>Social Media</h2>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Youtube</a>
+                <a href="#">Twitter</a>
+            </div>
+            <form id="footerEmailForm" onsubmit="return confirm('Do you really want to submit this email?');" >
+                <h2>Join Our Team Blog</h2>
+                <input type="email" placeholder="Enter your email address" id="footerEmail">
+                <input type="submit" value="Sign Up" id="footerEmailButton">
+            </form>
+            <script src="scripts/toggleMode.js"></script>
+        </footer>
+    </div>
+</body>
+</html>

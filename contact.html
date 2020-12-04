@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nathan">
+    <meta name="email" content="gene0037@algonquinlive.com">
+    <meta name="author" content="Tirath">
+    <meta name="email" content="mula0019@algonquinlive.com">
+    <meta name="author" content="Mohamed">
+    <meta name="email" content="temk0001@algonquinlive.com">
+    <meta name="author" content="Hussein">
+    <meta name="email" content="dawo0017@algonquinlive.com">
+    <title>Contact Page</title>
+    <link rel="stylesheet" type="text/css" href="scripts/main.css">
+    <link rel="stylesheet" type="text/css" href="scripts/contactPage.css">
+</head>
+
+<header id="landingPageHeader">
+    <a href="index.html" alt=""><img src="images/portfolio.png" alt="logo" id="portfolioIcon"></a>
+    <!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzjcxYpoOxSe_UBhv-drp46jLNCyNsXBcMzw&usqp=CAU -->
+    <nav>
+        <a href="aboutus.html">About Us</a>
+        <a href="tirath.html">Tirath</a>
+        <a href="moh.html">Moh</a>
+        <a href="hussein.html">Hussein</a>
+        <a href="nathan.html">Nathan</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+<body>
+    <br><br><br>
+    <article class="fullPage">
+      <div class=contactPage>
+        <div>
+            <h1>
+                Script Overlords
+            </h1>
+        </div>
+        <h2>
+            Contact Information
+        </h2>
+        <p>
+            Feel free to contact us via the form below:
+        </p>
+        <form class="profileForm" name="profileForm" action="contact.html" method="GET" onsubmit="return confirm('Do you really want to submit the form?');" >
+            <table>
+              <tr>
+                <td>First Name</td>
+                <td><input type="text" name="firstName" id="firstName"></td>
+                <td><span class="alert" id="validatingFirstName"></span></td>
+              </tr>
+              <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lastName" id="lastName"></td>
+                <td><span class="alert" id="validatingLastName"></span></td>
+              </tr>
+              <tr>
+                <td>Email Address</td>
+                <td><input type="text" id="emailAddress" name="emailAddress"></td>
+                <td><span class="alert" id="validatingEmailAddress"></span></td>
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td><input type="text" name="address" id="address"></td>
+                <td><span class="alert" id="validatingAddress"></span></td>
+              </tr>
+              <tr>
+                <td>City</td>
+                <td><input type="text" name="city" id="city"></td>
+                <td><span class="alert" id="validatingCity"></span></td>
+              </tr>
+              <tr>
+                <td>Province</td>
+                <td>
+                    <select id="province" name="province">
+                    <option value="">Select Province</option>
+                    <option value="AB">Alberta</option>
+                    <option value="BC">British Columbia</option>
+                    <option value="MB">Manitoba</option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="NL">Newfoundland and Labrador</option>
+                    <option value="NS">Nova Scotia</option>
+                    <option value="ON">Ontario</option>
+                    <option value="PE">Prince Edward Island</option>
+                    <option value="QC">Quebec</option>
+                    <option value="SK">Saskatchewan</option>
+                    <option value="NT">Northwest Territories</option>
+                    <option value="NU">Nunavut</option>
+                    <option value="YT">Yukon</option>
+                  </select>
+                </td>
+                <td><span class="alert" id="validatingProvince"></span></td>
+              </tr>
+              <tr>
+                <td>Country</td>
+                <td>
+                  <select id="country" name="country">
+                    <option value="">Select Country</option>
+                    <option value="CA">Canada</option>
+                    <option value="US">United States</option>
+                    <option value="OTH">Other</option>
+                  </select>
+                </td>
+                <td><span class="alert" id="validatingCountry"></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="submit" value="Submit" id="contactSubmit"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="reset" value="Reset" id="contactReset"></td>
+              </tr>
+            </table>
+            <script src="scripts/contactValidate.js"></script>
+            <script src="scripts/contactEvents.js"></script>
+          </form>
+        </div>
+    </article>
+    <br><br>
+    <div id="footerContainer">
+      <footer>
+          <div class="footerHeading footer0">
+              <h2>Mode</h2>
+              <button class="btn-toggle">Toggle</button>
+          </div>
+          <div class="footerHeading footer1">
+              <h2>About Us</h2>
+              <a href="aboutus.html">Meet The Team</a>
+          </div>
+          <div class="footerHeading footer2">
+              <h2>Contact Us</h2>
+              <a href="mailto:devteam8117@gmail.com?subject=inquiry%20from%20website">Send an Email</a>
+          </div>
+          <div class="footerHeading footer3">
+              <h2>Social Media</h2>
+              <a href="#">Instagram</a>
+              <a href="#">Facebook</a>
+              <a href="#">Youtube</a>
+              <a href="#">Twitter</a>
+          </div>
+          <form id="footerEmailForm" onsubmit="return confirm('Do you really want to submit this email?');" >
+              <h2>Join Our Team Blog</h2>
+              <input type="email" placeholder="Enter your email address" id="footerEmail">
+              <input type="submit" value="Sign Up" id="footerEmailButton">
+          </form>
+          <script src="scripts/toggleMode.js"></script>
+      </footer>
+    </div>
+</body>
+</html>
