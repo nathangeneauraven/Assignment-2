@@ -1,0 +1,44 @@
+table tr {
+    height: 25px;
+}
+
+.fullPage table,
+#firstName,
+#lastName,
+#emailAddress,
+#address,
+#city,
+#province,
+#country {
+    border: 1px solid black;
+}
+
+.alert {
+    color: red;
+}
+
+.contactPage,
+.contactPage table {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#contactSubmit,
+#contactReset {
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: red;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#contactSubmit:hover,
+#contactReset:hover {
+    cursor: pointer;
+    background-color: #337af1;
+    transform: all 0.4 ease-out;
+}

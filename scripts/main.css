@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.slider {
+    padding: 250px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.slider__nav {
+    width: 12px;
+    height: 12px;
+    margin: 2rem 12px;
+    border-radius: 50%;
+    z-index: 1;
+    outline: 6px solid #ccc;
+    outline-offset: -6px;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.slider__nav:checked {
+    -webkit-animation: check 0.4s linear forwards;
+    animation: check 0.4s linear forwards;
+}
+
+.slider__nav:checked:nth-of-type(1)~.slider__inner {
+    left: 0%;
+}
+
+.slider__nav:checked:nth-of-type(2)~.slider__inner {
+    left: -100%;
+}
+
+.slider__nav:checked:nth-of-type(3)~.slider__inner {
+    left: -200%;
+}
+
+.slider__nav:checked:nth-of-type(4)~.slider__inner {
+    left: -300%;
+}
+
+.slider__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    -webkit-transition: left 0.4s;
+    transition: left 0.4s;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+
+.slider__contents {
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.slider__image {
+    max-height: 100px;
+    max-width: 100px;
+    padding-bottom: 100px;
+}
+
+.slider__caption {
+    font-weight: 500;
+    margin: 1rem 0 1rem;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+.slider__txt {
+    color: #999;
+    margin-bottom: 3rem;
+    max-width: 300px;
+}
+
+@-webkit-keyframes check {
+    50% {
+        outline-color: #333;
+        box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+    }
+
+    100% {
+        outline-color: #333;
+        box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+    }
+}
+
+@keyframes check {
+    50% {
+        outline-color: #333;
+        box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+    }
+
+    100% {
+        outline-color: #333;
+        box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+    }
+}
+
+body {
+    --text-color: #222;
+    --bkg-color: #fff;
+}
+
+body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #121212;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    /* defaults to dark theme */
+    .fullPage {
+        --text-color: #eee;
+        --bkg-color: #121212;
+    }
+
+    body.light-theme {
+        --text-color: #222;
+        --bkg-color: #fff;
+    }
+}
+
+body {
+    background: var(--bkg-color);
+}
+
+.fullPage h1,
+.fullPage p,
+.fullPage table,
+.fullPage h2 {
+    color: var(--text-color);
+}
+
+
+#landingPageHeader {
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 10px;
+    padding: 23px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    opacity: 0.7;
+}
+
+#landingPageHeader nav {
+    overflow: hidden;
+    position: fixed;
+    right: 20px;
+}
+
+#landingPageHeader img {
+    border: 0;
+    width: 100px;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+#portfolioIcon {
+    max-height: 50px;
+    max-width: 40px;
+}
+
+#landingPageHeader nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#landingPageHeader nav a:hover {
+    text-decoration: 0.3s ease-out;
+    color: red;
+}
+
+#landingPageBody {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    columns: #926239;
+    line-height: 1.6;
+}
+
+#showcase {
+    background-image: url("../images/showcase.png");
+    /* https://www.highgainwireless.com/wp-content/themes/highgainwireless/images/offerings-banner.jpg*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#showcase h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    color: white
+}
+
+#showcase p {
+    font-size: 20px;
+    color: white
+}
+
+#showcase .button {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    border: white 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+
+}
+
+#footerContainer {
+
+    padding: 2rem 0rem 0.5rem 0rem;
+    background-color: black;
+}
+
+footer {
+    width: 90%;
+    height: 40vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footerHeading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4.0rem;
+}
+
+.footerHeading h2 {
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.footerHeading a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footerHeading a:hover {
+    color: red;
+    text-decoration: 0.3s ease-out;
+}
+
+#footerEmailForm h2 {
+    margin-bottom: 2rem;
+}
+
+#footerEmail,
+#firstName,
+#lastName,
+#emailAddress,
+#address,
+#city,
+#province,
+#country {
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#footerEmailButton::placeholder {
+    color: gray;
+}
+
+#footerEmailButton,
+.btn-toggle {
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: red;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#footerEmailButton:hover,
+.btn-toggle:hover {
+    cursor: pointer;
+    background-color: #337af1;
+    transform: all 0.4 ease-out;
+}
+
+.introWrapper {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.introWrapper .item {
+    width: 220px;
+    margin: 10px;
+    background: white;
+    padding: 30px 20px 65px;
+    border-radius: 10px;
+    border: 5px solid black;
+    position: static;
+}
+
+.introWrapper .item.item_One h3 {
+    color: black;
+}
+
+.introWrapper .item.item_Two h3 {
+    color: red;
+}
+
+.introWrapper .item.item_Three h3 {
+    color: black;
+}
+
+.introWrapper .item.item_Four h3 {
+    color: red;
+}
+
+.introWrapper .item.item_One .subLink {
+    background: black;
+}
+
+.introWrapper .item.item_Two .subLink {
+    background: red;
+}
+
+.introWrapper .item.item_Three .subLink {
+    background: black;
+}
+
+.introWrapper .item.item_Four .subLink {
+    background: red;
+}
+
+.introWrapper .item img {
+    width: 200px;
+    margin: 10px auto;
+}
+
+.introWrapper .item .info p {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 3px;
+}
+
+.introWrapper .item .resume {
+    margin-top: 20px;
+}
+
+.introWrapper .item .resume h3 {
+    margin-bottom: 20px;
+}
+
+.introWrapper .item .subLink {
+    position: static;
+    bottom: 0;
+    left: 50%;
+    margin-left: 18px;
+    width: 170px;
+    padding: 8px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: -30px;
+}
+
+
+.introWrapper .item .subLink a {
+    color: #fff;
+}
+
+.introWrapper .item .subLink a:hover {
+    text-decoration: 0.3s ease-out;
+    color: blue;
+}
