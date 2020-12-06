@@ -43,7 +43,7 @@
         <p>
             Feel free to contact us via the form below:
         </p>
-        <form class="profileForm" name="profileForm" action="contact.html" method="GET" onsubmit="return confirm('Do you really want to submit the form?');" >
+        <form class="profileForm" name="profileForm" action="contact.html" method="GET" onsubmit="return !!confirm('Do you really want to submit the form?') & getCookies()" >
             <table>
               <tr>
                 <td>First Name</td>
