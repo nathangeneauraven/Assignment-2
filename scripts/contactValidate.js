@@ -60,3 +60,23 @@ var validateProfile = (function(){
         }
     }
 })();
+
+let fnameId = document.getElementById("firstName");
+let lnameId = document.getElementById("lastName");
+let emailId = document.getElementById("emailAddress");
+let addressId = document.getElementById("address");
+let cityId = document.getElementById("city");
+let provinceId = document.getElementById("province");
+let countryId = document.getElementById("country");
+let fname1, lname1, email1, address1, city1, province1, country1;
+
+function getCookies(){
+    fname1 = fnameId.value;
+    lname1 = lnameId.value;
+    email1 = emailId.value;
+    address1 = addressId.value;
+    city1 = cityId.value;
+    province1 = provinceId.options[provinceId.selectedIndex].text;
+    country1 = countryId.options[countryId.selectedIndex].text;
+    document.cookie = ["firstName="+fname1,"lastName="+lname1,"email="+email1,"address="+address1,"city="+city1,"province="+province1,"country="+country1];
+}
